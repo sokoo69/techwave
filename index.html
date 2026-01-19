@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechWave</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+<style>
+
+   * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-btn {
+            background: linear-gradient(135deg, #FF00D6 0%, #FFCC00 100%);
+        }
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #D600B5 0%, #E6B800 100%);
+        }
+</style>
 </head>
-<body>
-    
+ <body class="bg-[#1a0b2e] text-white">
+
+    <header class="border-b border-white/10 w-full relative z-50">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="./assets/TechWave.png" alt="TechWave" class="h-8 md:h-10 object-contain">
+                </div>
+
+                <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <li><a href="#about" class="hover:text-pink-500 transition-all">About</a></li>
+                    <li><a href="#episodes" class="hover:text-pink-500 transition-all">Episodes</a></li>
+                    <li><a href="#host" class="hover:text-pink-500 transition-all">Host</a></li>
+                </ul>
+
+                <div class="hidden md:block">
+                    <a href="#subscribe"
+                        class="gradient-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/50 flex items-center gap-2">
+                        Subscribe
+                        <img src="./assets/ArrowRight.png" alt="" class="w-4 h-4 translate-y-[1px]">
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
 </body>
 </html>
